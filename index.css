@@ -145,6 +145,24 @@ h4, h5, h6{
 
 /*****************/
 
+/* pricing block */
+
+.pricing-block{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    background: url(assets/block_5.svg) no-repeat 10% 10%;
+    background-size: cover;
+}
+
+.pricing-block__inner{
+    max-width: 800px;
+}
+
+/*****************/
+
 /* title */
 
 .title{
