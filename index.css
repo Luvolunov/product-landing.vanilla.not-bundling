@@ -27,7 +27,7 @@ h4, h5, h6{
 .header__body{
     display: flex;
     align-items: center;
-    height: 100%;
+    flex-grow: 1;
     padding-left: 100px;
 }
 
@@ -97,7 +97,8 @@ h4, h5, h6{
 /* block */
 
 .block{
-    height: 100vh;
+    min-height: 100vh;
+    height: 100%;
 }
 
 /*********/
@@ -236,6 +237,8 @@ h4, h5, h6{
         flex-direction: column;
     }
     .header__body{
+        justify-content: center;
+        align-items: center;
         padding: 20px;
     }
     .section-block{
