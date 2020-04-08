@@ -1,8 +1,162 @@
-body{
+body,
+h1, h2, h3,
+h4, h5, h6{
     margin: 0;
     padding: 0;
+    font-family: sans-serif;
 }
+
+
+/* header */
+
+.header{
+    display: flex;
+    flex-direction: column;
+    background: url(assets/header-bg.svg) no-repeat 100% 0;
+    background-size: contain;
+}
+
+.header__head{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px 0;
+}
+
+.header__body{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding-left: 100px;
+}
+
+.header__body-inner{
+    max-width: 530px;
+}
+
+.header__body-title{
+    font-size: 40px;
+    color: #091133;
+}
+
+.header__text{
+    display: inline-block;
+    margin: 30px 0;
+    color: #505F98;
+    font-size: 18px;
+    line-height: 160%;
+}
+
+.header__actions{
+    display: flex;
+    justify-content: space-between;
+}
+
+/**********/
+
+/* buttons */
+
+.btn{
+    padding: 8px 70px;
+    border: none;
+    background: none;
+    border-radius: 3px;
+    transition-duration: 0.3s;
+}
+
+.btn.btn_light{
+    border: 1px solid #091133;
+    color: #091133;
+}
+
+.btn.btn_light:hover{
+    background-color: #091133;
+    color: white;
+}
+
+.btn.btn_dark{
+    border: 1px solid #091133;
+    background-color: #091133;
+    color: white;
+}
+
+.btn.btn_dark:hover{
+    background-color: transparent;
+    color: #091133;
+}
+
+/***********/
+
+/* navigation */
+
+.nav{
+    font-family: Arial;
+}
+
+.nav__link{
+    display: inline-block;
+    text-decoration: none;
+    color: #505F98;
+    padding: 8px 25px;
+}
+
+
+
+/**************/
+
+/* block */
 
 .block{
     height: 100vh;
 }
+
+/*********/
+
+/* title */
+
+.title{
+    font-weight: bold;
+    font-size: 26px;
+    color: #37447E;
+}
+
+/*********/
+
+/* media-query */
+
+@media screen and (max-width: 800px){
+    .header{
+        background-size: cover;
+    }
+    .header__head{
+        flex-direction: column;
+    }
+    .header__body{
+        padding: 20px;
+    }
+    .title{
+        order: 1;
+    }
+    .nav{
+        order: 2;
+    }
+    .btn-outer{
+        padding: 25px 0px;
+        order: 3;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .header{
+        background: #E7ECFF;
+    }
+    .header__actions{
+        flex-direction: column;
+    }
+    .header__actions > .btn {
+        margin-bottom: 10px;
+    }
+}
+
+/***************/
