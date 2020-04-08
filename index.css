@@ -35,17 +35,8 @@ h4, h5, h6{
     max-width: 530px;
 }
 
-.header__body-title{
-    font-size: 40px;
-    color: #091133;
-}
-
 .header__text{
     display: inline-block;
-    margin: 30px 0;
-    color: #505F98;
-    font-size: 18px;
-    line-height: 160%;
 }
 
 .header__actions{
@@ -101,8 +92,6 @@ h4, h5, h6{
     padding: 8px 25px;
 }
 
-
-
 /**************/
 
 /* block */
@@ -113,12 +102,55 @@ h4, h5, h6{
 
 /*********/
 
+/* text */
+
+.text{
+    display: block;
+    padding: 30px 0;
+    color: #505F98;
+    font-size: 18px;
+    line-height: 160%;
+}
+
+/********/
+
+/* section block */
+
+.section-block{
+    display: flex;
+    justify-content: center;
+}
+
+.section-block__hand{
+    flex-grow: 1;
+    flex-basis: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-block__content{
+    max-width: 600px;
+}
+
+.section-block__text-outer{
+    padding: 20px;
+}
+
+.section-block__image{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+/*****************/
+
 /* title */
 
 .title{
     font-weight: bold;
-    font-size: 26px;
-    color: #37447E;
+    font-size: 40px;
+    color: #091133;
 }
 
 /*********/
@@ -134,6 +166,9 @@ h4, h5, h6{
     }
     .header__body{
         padding: 20px;
+    }
+    .section-block{
+        flex-direction: column;
     }
     .title{
         order: 1;
@@ -154,7 +189,7 @@ h4, h5, h6{
     .header__actions{
         flex-direction: column;
     }
-    .header__actions > .btn {
+    .header__actions > .btn{
         margin-bottom: 10px;
     }
 }
